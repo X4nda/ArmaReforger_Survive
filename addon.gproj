@@ -1,0 +1,8 @@
+GameProject {
+ ID "AISurvive"
+ GUID "5972DEA9A7524940"
+ TITLE "AISurvive"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+}

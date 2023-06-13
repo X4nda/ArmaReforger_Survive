@@ -1,0 +1,12 @@
+RadioManagerEntity : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.et" {
+ coords 14.51 0 0.585
+}
+ScriptedChatEntity : "{F69BC912AC8236F9}Prefabs/MP/ScriptedChatEntity.et" {
+ coords 12.807 0 3.16
+}
+SCR_MPDestructionManager : "{9BB369F2803C6F71}Prefabs/MP/MPDestructionManager.et" {
+ coords 10.976 0 5.009
+}
+SCR_CoopTaskManager : "{BA79FF1D825A3F3A}Prefabs/MP/Managers/Tasks/CoopTaskManager.et" {
+ coords 5.728 0 10.059
+}

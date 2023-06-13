@@ -1,0 +1,88 @@
+SCR_GameModeAISurvive SCR_GameModeAISurvive1 {
+ components {
+  SCR_CallsignManagerComponent "{5972E20770B753D9}" {
+  }
+  SCR_DestructionManagerComponent "{5972E2077235ACCD}" {
+  }
+  SCR_GameOverScreenManagerComponent "{5972E20777EBB6F7}" {
+  }
+  SCR_GroupsManagerComponent "{5972E20779F2F1AE}" {
+  }
+  SCR_HintManagerComponent "{5972E2077BF21B1E}" {
+  }
+  SCR_NametagConfigComponent "{5972E2077A006C62}" {
+  }
+  SCR_NotificationSenderComponent "{5972E2077FF164D3}" {
+  }
+  SCR_PlayerProfileManagerComponent "{5972E20741850D17}" {
+  }
+  SCR_PlayersRestrictionZoneManagerComponent "{5972E20743256C5A}" {
+  }
+  SCR_PossessingManagerComponent "{5972E207457F50C1}" {
+  }
+  SCR_RespawnBriefingComponent "{5972E207479AEEBA}" {
+   m_aGameModeHints {
+    SCR_HintUIInfo "{5972E2064C5FD436}" {
+     Name "Survive"
+     Description "Survive against the wave"
+    }
+   }
+  }
+  SCR_RespawnMenuHandlerComponent "{5972E20749F89107}" {
+  }
+  SCR_RespawnSystemComponent "{5972E2074857FED3}" {
+  }
+  SCR_RespawnTimerComponent "{5972E2074CC6F215}" {
+  }
+  SCR_SaveLoadComponent "{5972E2074EC696FF}" {
+  }
+  SCR_VotingManagerComponent "{5972E207515561C5}" {
+  }
+  RplComponent "{5972E2075363C74D}" {
+  }
+ }
+ coords -0.135 0 0.614
+ m_GroupType "{657590C1EC9E27D3}Prefabs/Groups/OPFOR/Group_USSR_LightFireTeam.et"
+}
+PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+ coords 2.133 0 3.517
+}
+SCR_FactionManager CoopFactionManager1 : "{E4075339B4E24E10}Prefabs/MP/Managers/Factions/CoopFactionManager.et" {
+ coords 5.81 0 9.254
+}
+SCR_LoadoutManager : "{0C4D399744D5B3FD}Prefabs/MP/Managers/Loadouts/CoopLoadoutManager.et" {
+ coords 5.514 0 7.308
+}
+SCR_EntityWaypoint WP1 : "{1B0E3436C30FA211}Prefabs/AI/Waypoints/AIWaypoint_Attack.et" {
+ coords 4898.739 28.595 11762.556
+}
+$grp SCR_SpawnPoint : "{4FEA25583D0975F7}Prefabs/MP/Spawning/SpawnPoint_USSR.et" {
+ {
+  coords 4464.191 22.411 11747.177
+  m_fSpawnRadius 5
+ }
+ {
+  coords 5290.644 9.849 11838.601
+  m_fSpawnRadius 5
+ }
+ {
+  coords 4679.742 27.813 11173.516
+  m_fSpawnRadius 5
+ }
+ {
+  coords 5346.7 41.709 11327.082
+  m_fSpawnRadius 5
+ }
+ {
+  coords 4636.019 17.012 12363.343
+  m_fSpawnRadius 5
+ }
+ {
+  coords 5003.934 10.423 12274.853
+  m_fSpawnRadius 5
+ }
+ {
+  coords 5114.502 32.878 11502.061
+  m_fSpawnRadius 5
+ }
+}

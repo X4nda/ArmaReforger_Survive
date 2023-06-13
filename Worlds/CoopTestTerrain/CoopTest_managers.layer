@@ -1,0 +1,60 @@
+SCR_MapEntity MapEntity : "{731564B66F91B107}Prefabs/World/Game/MapEntity.et" {
+}
+SCR_CameraManager CameraManager : "{33F9FD881E3700CC}Prefabs/World/Game/SCR_CameraManager.et" {
+ DefaultViewPosition 0 256 0
+ DefaultViewAngles -30 45 0
+ DefaultViewFov 60
+}
+TimeAndWeatherManagerEntity TimeAndWeatherManager : "{A3BAF78F6F03315B}Prefabs/World/Game/TimeAndWeatherManager.et" {
+ coords 114.399 0 106.482
+ "Internal variant transition" 0
+ "Internal subvariant 0" 0
+ "Internal subvariant 1" 0
+}
+ProjectileSoundsManager ProjectileSoundsManager : "{B4DA8B0024536625}Prefabs/World/Game/ProjectileSoundsManager.et" {
+ coords 114.399 0 106.482
+}
+RadioManagerEntity RadioManager : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.et" {
+ coords 114.399 1 106.482
+}
+ScriptedChatEntity ChatEntity : "{F69BC912AC8236F9}Prefabs/MP/ScriptedChatEntity.et" {
+ coords 9.341 0 6.234
+}
+GenericEntity CoopLogic {
+ coords 265.941 10.001 268.581
+ userScript "	// code here"
+ constructor ""\
+ "		SetEventMask(EntityEvent.INIT);"\
+ "	"
+ EOnInit ""\
+ "		SCR_EliminateTask task = SCR_EliminateTask.Cast(GetWorld().FindEntityByName(\"EliminateTaskA\"));"\
+ "		if (task)"\
+ "		{"\
+ "			task.GetOnEliminatedInvoker().Insert(OnTaskComplete);"\
+ "		}"\
+ "	}"\
+ "	"\
+ "	void OnTaskComplete(SCR_BaseTask task) "\
+ "	{"\
+ "		SCR_BaseGameMode gameMode = SCR_BaseGameMode.Cast(GetGame().GetGameMode());"\
+ "		if (!gameMode || !gameMode.IsMaster())"\
+ "			return;"\
+ "		"\
+ "		Faction faction = task.GetTargetFaction();"\
+ "		int factionIndex = GetGame().GetFactionManager().GetFactionIndex(faction);"\
+ "        gameMode.EndGameMode(SCR_GameModeEndData.CreateSimple(SCR_GameModeEndData.ENDREASON_EDITOR_FACTION_VICTORY, -1, factionIndex));"\
+ "	"
+}
+SCR_MPDestructionManager DestructionManager : "{9BB369F2803C6F71}Prefabs/MP/MPDestructionManager.et" {
+}
+SCR_CoopTaskManager CoopTaskManager : "{BA79FF1D825A3F3A}Prefabs/MP/Managers/Tasks/CoopTaskManager.et" {
+ coords 229.281 10.001 247.172
+ m_aSupportedTaskTypes {
+  SCR_EliminateTaskSupportClass "{5968C9C362B1A0E9}" {
+   m_TaskPrefab "{B866318EB7E84833}Prefabs/Tasks/EliminateTask.et"
+  }
+ }
+ m_aInitialTaskNames {
+  "MoveTask_1" "EliminateTaskA" "EliminateTaskB"
+ }
+}

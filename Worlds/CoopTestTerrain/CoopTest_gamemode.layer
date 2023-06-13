@@ -1,0 +1,58 @@
+SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
+}
+SCR_GameModeInvadeAndAnnex SCR_GameModeInvadeAndAnnex1 {
+ components {
+  SCR_CallsignManagerComponent "{5972B0222D3B688F}" {
+  }
+  SCR_DestructionManagerComponent "{5972B0223591E2AF}" {
+  }
+  SCR_GameOverScreenManagerComponent "{5972B02238CE6997}" {
+  }
+  SCR_GroupsManagerComponent "{5972B022012F9F7C}" {
+  }
+  SCR_HintManagerComponent "{5972B02205D50D0A}" {
+  }
+  SCR_NametagConfigComponent "{5972B022068CEE0B}" {
+  }
+  SCR_NotificationSenderComponent "{5972B02208724BB3}" {
+  }
+  SCR_PlayerProfileManagerComponent "{5972B0220EC9ADFE}" {
+  }
+  SCR_PlayersRestrictionZoneManagerComponent "{5972B022149DB5C5}" {
+  }
+  SCR_PossessingManagerComponent "{5972B02218237B15}" {
+  }
+  SCR_RespawnBriefingComponent "{5972B0221E2016FD}" {
+  }
+  SCR_RespawnMenuHandlerComponent "{5972B0226569879C}" {
+  }
+  SCR_RespawnSystemComponent "{5972B0226E1247AD}" {
+  }
+  SCR_RespawnTimerComponent "{5972B02276EA3B3C}" {
+  }
+  SCR_SaveLoadComponent "{5972B0227D0A5C35}" {
+  }
+  SCR_VotingManagerComponent "{5972B0227EBD1F37}" {
+  }
+  RplComponent "{5972B022407C8B9B}" {
+  }
+ }
+ coords 213.53 10.001 255.956
+ m_eTestGameFlags SpawnAI
+ m_TimeoutBetweenWaves 1
+ m_InitialGroupsCount 1
+ m_GroupType "{657590C1EC9E27D3}Prefabs/Groups/OPFOR/Group_USSR_LightFireTeam.et"
+}
+PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+}
+SCR_FactionManager FactionManager : "{E4075339B4E24E10}Prefabs/MP/Managers/Factions/CoopFactionManager.et" {
+}
+SCR_LoadoutManager LoadoutManager : "{0C4D399744D5B3FD}Prefabs/MP/Managers/Loadouts/CoopLoadoutManager.et" {
+}
+SCR_SpawnPoint SpawnPoint_US : "{CEA2B24051A44525}PrefabsEditable/SpawnPoints/E_SpawnPoint_US.et" {
+ coords 263 9 245
+ angleY -60
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
+  Name "Mustang"
+ }
+}
